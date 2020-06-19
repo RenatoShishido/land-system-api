@@ -8,7 +8,7 @@ const mongoose = require("mongoose")
 //     })
 //     .catch((err) => console.log("error: " + err))
 
-mongoose.connect(`mongodb+srv://renato:renato123@cluster0-y0qaz.mongodb.net/test?retryWrites=true&w=majority`, 
+mongoose.connect(`${process.env.URL_BANCO}`, 
 { useUnifiedTopology: true,
    useNewUrlParser: true,
    useFindAndModify: false })
