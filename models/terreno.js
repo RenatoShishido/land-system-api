@@ -1,6 +1,10 @@
 const mongoose = require('mongoose')
 
 const TerrenoSchema = new mongoose.Schema({
+  troca: {
+    type: Number,
+    default: 0,
+  },
   valor: {
     type: String,
   },
@@ -21,6 +25,7 @@ const TerrenoSchema = new mongoose.Schema({
     parcela: String,
     pagas: Number,
     total: String,
+    totalAcumulado: String,
   },
   data: {
     type: Date,
